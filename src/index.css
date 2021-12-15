@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Card-poster{
+  height: 640px;
+  width: 340px;
+  object-fit: cover;
 }
+
+.Card-name{
+  font-size: 24px;
+}
+
+.Card-specs
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.Card{
+  width: 340px;
+  box-shadow: 0 10px 85px 0 rgba(0, 0, 0, 0.2),
+    0 16px 40px 0 rgba(58, 166, 255, 0.19);
+}
+.movie-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  gap:1rem;
+}
+body{
+  margin: 24px;
+}
+
+/* .Card {
+  justify-content: center;
+  justify-items: center;
+  border: 2px solid rgb(131, 129, 129);
+  padding: 10px;
+  width: 20rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  
+}
+
+.Card-poster {
+  justify-content: center;
+  height: 10rem;
+  width: auto;
+  object-fit: cover;
+} */
